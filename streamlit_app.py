@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from sklearn.compose import make_column_transformer
 from sklearn.ensemble import GradientBoostingRegressor
@@ -68,7 +69,7 @@ def render_app():
             },
             index=[0],
         )
-        st.session_state["prediction"] = model.predict(X)
+        st.session_state["prediction"] = round(model.predict(X)[0], 2)
 
     if st.session_state["prediction"] is not None:
         st.markdown(f"#### Target Prediction: {st.session_state['prediction']}")
