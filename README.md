@@ -6,5 +6,8 @@ Run app using this command: `streamlit run streamlit_app.py`
 * `make-regression-data.ipynb` - jupyter notebook for generating data
 
 # Deployment
-* [Streamlit community cloud deployment guide](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app)
 * [Deployed app](https://regression-demo.streamlit.app/)
+
+# Streamlit documentation
+* [API reference](https://docs.streamlit.io/library/api-reference)
+* [Streamlit community cloud deployment guide](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app)
