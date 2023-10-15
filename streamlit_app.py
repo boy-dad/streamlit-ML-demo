@@ -74,4 +74,7 @@ def render_app():
         st.markdown(f"#### Target Prediction: {st.session_state['prediction']}")
 
 
+if "prediction" not in st.session_state:
+    st.session_state["prediction"] = None
+
 render_app()
